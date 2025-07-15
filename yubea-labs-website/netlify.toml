@@ -15,8 +15,7 @@
   port = 4321
 
 # Form handling
-[[plugins]]
-  package = "@netlify/plugin-functions"
+
 
 # Headers for security
 [[headers]]
