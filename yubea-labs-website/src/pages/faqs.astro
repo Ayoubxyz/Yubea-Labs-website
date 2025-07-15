@@ -1,0 +1,356 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Frequently Asked Questions - Yubea Labs" description="Get answers to common questions about our no-code development services, timelines, scalability, and more. Learn how Yubea Labs can help your business.">
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Get answers to the most common questions about our no-code development services, processes, and solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Categories -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- No-Code Development -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">About No-Code Development</h2>
+        
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What exactly is no-code development?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>No-code development allows us to build fully functional web applications, databases, and automation workflows without writing traditional code. Instead, we use visual interfaces and drag-and-drop tools to create custom solutions. This approach is faster, more cost-effective, and allows for rapid iteration while still delivering professional, scalable results.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Is no-code as reliable as traditional coding?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Yes, when implemented correctly. We use enterprise-grade no-code platforms like Bubble, Airtable, and Zapier that power thousands of successful businesses worldwide. These platforms handle security, scalability, and reliability at the infrastructure level, often better than custom-coded solutions. Plus, you get the benefit of automatic updates and maintenance.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What types of applications can you build with no-code?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We can build a wide range of applications including client portals, CRM systems, project management tools, e-commerce platforms, booking systems, inventory management, workflow automation, and much more. If it involves data management, user interactions, or business processes, we can likely build it with no-code tools.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Will I own the solution you build for me?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Absolutely. You will own your application, data, and all associated accounts. We build everything under your name and provide you with full admin access. You're not locked into working with us long-term, though many clients choose to continue with our maintenance and support services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timelines & Process -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Timelines & Process</h2>
+        
+        <div class="space-y-6">
+          <!-- FAQ 5 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">How can you deliver in just 2 weeks?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Our Yubea Launch Loop™ process is optimized for speed without compromising quality. We use proven templates, pre-built components, and established workflows. Plus, no-code development is inherently faster than traditional coding. We focus on the 80% of features that deliver 80% of the value, ensuring you get a functional solution quickly.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What happens if my project takes longer than 2 weeks?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We're committed to our 2-week timeline. If delays occur due to our end, we'll complete the work at no additional cost. If delays are due to scope changes or client feedback cycles, we'll discuss timeline adjustments transparently. Our track record shows 95% of projects deliver on time.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">How involved do I need to be during the development process?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We need about 2-3 hours of your time spread across the 2 weeks. This includes the initial discovery call (1 hour), a mid-project demo and feedback session (30 minutes), and final training (1 hour). We handle everything else and provide daily updates via email or Slack.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Can I request changes during development?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Minor adjustments and refinements are included in our process. Major scope changes may require timeline or budget adjustments, which we'll discuss transparently. We show you progress regularly to minimize surprises and ensure we're building exactly what you need.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scalability & Growth -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Scalability & Growth</h2>
+        
+        <div class="space-y-6">
+          <!-- FAQ 9 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Can no-code solutions scale as my business grows?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Yes, absolutely. The platforms we use (like Bubble and Airtable) are designed to scale from startup to enterprise level. Many companies processing millions of transactions use these platforms. We also design your solution's architecture with growth in mind, making it easy to add features, users, and data capacity as needed.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What if I need to migrate to traditional code later?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>While most clients never need to migrate, it's possible. Your data can be exported, and the business logic we document can guide traditional developers. However, many enterprises stick with no-code because it's more maintainable and cost-effective than custom code. We'll help you make the right decision for your specific situation.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 11 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">How do you handle security and data protection?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Security is built into the platforms we use. They provide enterprise-grade security including SSL encryption, regular security audits, GDPR compliance, and data backups. We also implement best practices like role-based access controls, secure authentication, and data validation. Your data is often more secure than with custom-built solutions.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 12 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Can you integrate with our existing tools and systems?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Yes, integration is one of the strengths of no-code platforms. We can connect to most popular business tools including Google Workspace, Microsoft 365, Slack, Stripe, PayPal, email marketing platforms, accounting software, and thousands of other applications through APIs and automation tools like Zapier.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing & Support -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Pricing & Support</h2>
+        
+        <div class="space-y-6">
+          <!-- FAQ 13 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Are there any ongoing costs after the initial development?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>You'll have platform subscription costs (typically $25-100/month depending on usage) and optional maintenance with us (starting at $99/month). These costs are transparent and much lower than hosting and maintaining traditional coded solutions. Many clients save thousands compared to custom development and hosting.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 14 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Do you offer payment plans?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Yes, we offer flexible payment options. You can pay 50% upfront and 50% upon completion, or split into three payments over the project timeline. For larger custom projects, we can discuss extended payment terms. We want to make our services accessible to growing businesses.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 15 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What kind of support do you provide after launch?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We provide 30 days of free support after launch for any bugs or issues. After that, you can choose our Yubea Care maintenance plans starting at $99/month, which include updates, monitoring, backup management, and priority support. You can also manage the solution yourself with our comprehensive documentation and training.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 16 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What if I'm not satisfied with the final result?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Client satisfaction is our top priority. We show you progress throughout the project to avoid surprises. If you're not satisfied, we'll work with you to make it right at no additional cost. We also offer a 7-day revision period after delivery. Our 98% client satisfaction rate speaks to our commitment to quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gulf Region Specific -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Gulf Region Specific</h2>
+        
+        <div class="space-y-6">
+          <!-- FAQ 17 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Do you understand the specific business needs of the Gulf region?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Absolutely. We've worked with over 50 businesses across the UAE, Saudi Arabia, Kuwait, Qatar, Bahrain, and Oman. We understand local business culture, regulatory requirements, payment preferences, language needs, and market dynamics. This regional expertise is built into every solution we create.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 18 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Can you build solutions in Arabic or support multiple languages?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>Yes, we can build multilingual solutions supporting Arabic, English, and other languages. We handle right-to-left text formatting, cultural design considerations, and can integrate with local payment gateways and services commonly used in the Gulf region.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 19 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">What time zone do you work in for support and communication?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We work primarily in Gulf Standard Time (GST) to align with our clients' business hours. Our team is available for calls and meetings from 9 AM to 6 PM GST, Sunday through Thursday. We also provide email and chat support with quick response times during business hours.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 20 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <h3 class="text-lg font-semibold text-gray-900">Do you handle local compliance and regulatory requirements?</h3>
+              <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden mt-4 text-gray-600">
+              <p>We're familiar with common regulatory requirements in the Gulf region including data residency, privacy laws, and industry-specific compliance needs. While we're not legal advisors, we can build solutions that support compliance and recommend consulting with local legal experts for specific regulatory guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Still Have Questions -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Still Have Questions?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8">
+        We're here to help! Book a free strategy call and get personalized answers to your specific questions.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary text-lg px-8 py-4">
+          Book Free Strategy Call
+        </a>
+        <a href="/lead-magnet" class="btn-secondary text-lg px-8 py-4">
+          Download Free Checklist
+        </a>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<script>
+  function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('svg');
+    
+    if (answer.classList.contains('hidden')) {
+      answer.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      answer.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+</script>
+

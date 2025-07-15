@@ -1,0 +1,247 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  type?: 'website' | 'article' | 'product';
+  noindex?: boolean;
+  nofollow?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  image = '/og-image.jpg',
+  type = 'website',
+  noindex = false,
+  nofollow = false
+} = Astro.props;
+
+const canonicalURL = canonical || Astro.url.href;
+const imageURL = new URL(image, Astro.site).href;
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="robots" content={`${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' : 'follow'}`} />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageURL} />
+<meta property="og:site_name" content="Yubea Labs" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={imageURL} />
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="Yubea Labs" />
+<meta name="keywords" content="no-code development, Gulf region, client portal, MVP development, automation, CRM, Yubea Labs, Dubai, UAE, Saudi Arabia, Kuwait, Qatar, Bahrain, Oman" />
+<meta name="geo.region" content="AE-DU" />
+<meta name="geo.placename" content="Dubai" />
+<meta name="geo.position" content="25.2048;55.2708" />
+<meta name="ICBM" content="25.2048, 55.2708" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Yubea Labs",
+  "description": "No-code software agency serving service-based businesses in the Gulf region",
+  "url": "https://yubealabs.com",
+  "logo": "https://yubealabs.com/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+971-50-123-4567",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Arabic"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE"
+  },
+  "sameAs": [
+    "https://linkedin.com/company/yubealabs",
+    "https://wa.me/971501234567"
+  ],
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United Arab Emirates"
+    },
+    {
+      "@type": "Country", 
+      "name": "Saudi Arabia"
+    },
+    {
+      "@type": "Country",
+      "name": "Kuwait"
+    },
+    {
+      "@type": "Country",
+      "name": "Qatar"
+    },
+    {
+      "@type": "Country",
+      "name": "Bahrain"
+    },
+    {
+      "@type": "Country",
+      "name": "Oman"
+    }
+  ],
+  "service": [
+    {
+      "@type": "Service",
+      "name": "Client Portal Development",
+      "description": "Secure client portals with file sharing, payments, and progress tracking",
+      "offers": {
+        "@type": "Offer",
+        "price": "499",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Service", 
+      "name": "MVP Development",
+      "description": "Functional prototypes to validate business ideas",
+      "offers": {
+        "@type": "Offer",
+        "price": "799",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Business Automation",
+      "description": "Zapier/Make workflows to automate business processes",
+      "offers": {
+        "@type": "Offer",
+        "price": "299", 
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "CRM Development",
+      "description": "Custom CRM systems built on Airtable or Notion",
+      "offers": {
+        "@type": "Offer",
+        "price": "399",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Service-specific structured data for services page -->
+{type === 'product' && (
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "Client Portal Starter Kit",
+        "description": "Secure login, file sharing, payments, progress tracking",
+        "offers": {
+          "@type": "Offer",
+          "price": "499",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product", 
+        "position": 2,
+        "name": "MVP Launch Pack",
+        "description": "Functional prototype to validate your idea",
+        "offers": {
+          "@type": "Offer",
+          "price": "799",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 3, 
+        "name": "Automation Setup",
+        "description": "Zapier/Make workflows to save time",
+        "offers": {
+          "@type": "Offer",
+          "price": "299",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "CRM Buildout", 
+        "description": "Airtable or Notion CRM tailored to workflow",
+        "offers": {
+          "@type": "Offer",
+          "price": "399",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
+)}
+
+<!-- FAQ structured data for FAQ page -->
+{Astro.url.pathname === '/faqs' && (
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is no-code development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No-code development allows you to build functional applications and websites without writing traditional code. Instead, you use visual interfaces, drag-and-drop tools, and pre-built components to create solutions quickly and efficiently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you deliver a solution?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Our signature Yubea Launch Loop™ process is designed to deliver most solutions within 2 weeks. This includes discovery, development, testing, and deployment phases."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside the Gulf region?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While we specialize in serving businesses in the Gulf region (UAE, Saudi Arabia, Kuwait, Qatar, Bahrain, and Oman), we can work with clients globally who need no-code solutions."
+        }
+      }
+    ]
+  }
+  </script>
+)}
+
